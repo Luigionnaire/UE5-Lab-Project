@@ -47,3 +47,24 @@ void AMyFirst::TimeElapsed(float DeltaTime)
 	ElapsedTime += DeltaTime;
 }
 
+float AMyFirst::AddNumbers(float A, float B)
+{
+	return A+B;
+}
+
+float AMyFirst::SubtractNumbers(float A, float B)
+{
+	return A-B;
+}
+
+float AMyFirst::DivideNumbers(float A, float B)
+{
+	return A/B;
+}
+
+float AMyFirst::MultiplyNumbers(float A, float B)
+{
+	return A*B;
+}
+
+

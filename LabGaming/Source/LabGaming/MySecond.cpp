@@ -19,7 +19,7 @@ AMySecond::AMySecond()
 void AMySecond::BeginPlay()
 {
 	Super::BeginPlay();
-	MyFunction();
+	//MyFunction();
 	MyText->SetText(FText::FromString(TEXT("Countdown Text")));
 	CountDownTime = StartingTime;
 }
@@ -36,5 +36,8 @@ void AMySecond::Tick(float DeltaTime)
 void AMySecond::CountDown(float DeltaTime)
 {
 	if(CountDownTime >= DeltaTime) CountDownTime -= DeltaTime;
+	else {
+		CountDownTime = 0;
+	}
 }
 
